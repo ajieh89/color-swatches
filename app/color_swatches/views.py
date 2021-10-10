@@ -1,4 +1,5 @@
 import json
+import logging
 
 from urllib.parse import parse_qs
 from rest_framework.response import Response
@@ -25,9 +26,10 @@ def QueryColorSwatches(request):
 def CreateColorSwatches(request):
     try:
         params = json.loads(request.body);
+        logging.debug(type(params.get('properties')));
         color_space = ColorSwatches.objects.create(
             name = params.get('name'),
-            properties = params.get('properties')
+            properties = json.dumps(params.get('properties'))
         )
 
         return Response({

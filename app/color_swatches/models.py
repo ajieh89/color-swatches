@@ -34,8 +34,6 @@ class ColorSwatches(models.Model):
                     for key, value in random_color_space.get('properties').items():
                         random_color[key] = random.randrange(value.get('min'), value.get('max'))
 
-
-
                 res.append(random_color)
 
             return res

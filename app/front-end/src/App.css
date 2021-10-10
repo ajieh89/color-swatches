@@ -1,0 +1,30 @@
+.app {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100vh !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 12pt !important;
+  text-align: center;
+}
+
+.color-display {
+  width: 20%;
+  height: 100vh !important;
+  display: inline-block;
+}
+
+.color-info {
+  background-color: white;
+  color:black;
+  margin: 20px;
+  text-align: left;
+}
+
+.loading {
+  height: 100vh !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 12pt !important;
+  text-align: center;
+  margin-top: 20px;
+}
+
